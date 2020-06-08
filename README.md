@@ -1,4 +1,4 @@
-# Tracing Trajectory in Complex and Long Static Handwritten Signatures
+# Trajectory Tracing in Complex and Long Static Handwritten Signatures
 
 1. [Installation](#installation)
 2. [Run the code](#run-the-code)
