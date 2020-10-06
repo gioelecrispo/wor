@@ -1,4 +1,4 @@
-# Trajectory Tracing in Complex and Long Static Handwritten Signatures
+# Trajectory Tracing in Complex and Long Static Handwriting
 
 1. [Installation](#installation)
 2. [Run the code](#run-the-code)
@@ -65,7 +65,7 @@ Also, the code options for logging, debug and execution are defined.
 **Code options**
 - options.debug: if you want to execute with debug code;
 - options.plot: if you want to plot some auxiliar figures;
-- options.real: if you want to do the algorithm also on the real signature version (you need a skeletonization specimen)  
+- options.real: if you want to do the algorithm also on the real specimen version (you need a skeletonization specimen)  
 - options.computeResults: if you want to compute the metrics (you need the online version of the speciment)
 
 For the execution, we could choose for different strategies: 
