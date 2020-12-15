@@ -1,4 +1,4 @@
-# Trajectory Tracing in Complex and Long Static Handwriting
+# Writing Order Recovery in Complex and Long Static Handwriting
 
 1. [Installation](#installation)
 2. [Run the code](#run-the-code)
@@ -92,7 +92,7 @@ For the execution, we could choose for different strategies:
 
 ## Demo
 
-See the full video <a href="https://www.youtube.com/watch?v=BYJawbV0Y2k" target="_black">here</a>. 
+See the full video <a href="https://www.youtube.com/watch?v=TYoZZ8CThhw" target="_black">here</a>. 
 
 **High complexity**
 ![High Complexity](./assets/high.gif)
