@@ -1,5 +1,22 @@
 # Writing Order Recovery in Complex and Long Static Handwriting
 
+**cite** contains a MATLAB implementation for our [paper](https://www.researchgate.net/publication/349988795_Writing_Order_Recovery_in_Complex_and_Long_Static_Handwriting).  
+If you find this code useful in your research, please consider citing:
+
+```
+    @article{diaz2021wor,
+      title={Writing Order Recovery in Complex and Long Static Handwriting},
+      author={Diaz, Moises and Crispo, Gioele and Parziale, Antonio and Marcelli, Angelo and Ferrer, Miguel A.},  
+      journal={International Journal of Interactive Multimedia and Artificial Intelligence},
+      volume={X},
+      number={X},
+      pages={1--14},
+      year={2021},
+      publisher={UNIR},
+      doi = {To appear}
+    }
+```
+
 1. [Installation](#installation)
 2. [Run the code](#run-the-code)
 3. [Demo](#demo)
