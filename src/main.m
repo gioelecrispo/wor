@@ -42,9 +42,9 @@ config.real = false;             % the 'skeletonized' version is needed
 config.computeResults = true;    % the 'online' version is needed
 config.saveResults = true;       % if you want to save the results
 config.saveDrawings = true;      % if you want to save also the drawings
-config.databaseName = 'SigComp2009';
-config.writer = 44;         
-config.signature = 11; 
+config.databaseName = 'examples';
+config.writer = 'high';         
+config.signature = 1; 
 
 
 %% WRITING ORDER RECOVERY 
