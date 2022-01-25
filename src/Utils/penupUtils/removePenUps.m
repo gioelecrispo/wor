@@ -14,7 +14,7 @@ online.y(penUpIndexes) = [];
 
 
 %%% ONLINE 8 CONNESSA SENZA PEN UPs
-zeroIndexes = online8conn.x_8c == 0;
+zeroIndexes = online8conn.ep_8c == 0;
 online8conn.x_8c(zeroIndexes) = [];
 online8conn.y_8c(zeroIndexes) = [];
 online8conn.ep_8c(zeroIndexes) = [];
