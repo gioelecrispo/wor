@@ -1,8 +1,8 @@
-function [image, clusters, unfolder, data, results] = writeOrderRecovery(config)
+function [image, clusters, unfolder, data, results] = wor_results(options)
 
 %% OPTIONS INITIALIZATION
 % - Algorithm thresholds and weights initialization
-options = configuration(config);
+options = configuration(options);
 
 %% DATA LOADING AND INITIALIZATION 
 % - Image reading and data loading
@@ -18,7 +18,7 @@ options = configuration(config);
 
 %% GLOBAL RECONSTRUCTION
 % - Initial point detection and trace following
-unfolder = globalReconstruction(image, clusters, data, options);
+[~, ~, unfolder] = globalReconstruction(image, clusters, data, options);
 
 %% COMPUTING RESULTS
 % - Process evaluation and drawing unfolded trace
