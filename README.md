@@ -37,18 +37,16 @@ See the full video <a href="https://www.youtube.com/watch?v=TYoZZ8CThhw" target=
 ## Table of contents
 - [Installation](#installation)
 - [Run the code](#run-the-code)
-  - [Run the wor code](#run-the-wor-code))
-  - [Run the full code](#run-the-full-code))
+  - [Run the wor code](#run-the-wor-code)
+  - [Run the full code](#run-the-full-code)
 - [Algorithm Threshold and options configuration](#algorithm-threshold-and-options-configuration)
 
 
 ## Installation
-Clone the code on you local machine and run `src/main.m` or the `src/main_full.m` script. Please note that the working directory has to be `src` ant not the root folder. You need to run the command `addpath(genpath('./'))` from `src`.
+Clone the code on you local machine and run `src/main.m` or the `src/main_full.m` script. Please note that the working directory has to be `src` (not the root folder).
 
 ### Requirements
 You must have Matlab version 2016.a or major to run this code.
-
-
 
 ## Run the code
 The code is structured this way: 
