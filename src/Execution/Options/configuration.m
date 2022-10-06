@@ -57,7 +57,7 @@ loggerOptions.path = [options.loggerbasepath '/' options.databasepath];
 loggerOptions.cmdLevel = 'ALL';
 loggerOptions.fileLevel = 'ALL';
 options.loggerOptions = loggerOptions; 
-
+% options.logger = createLogger(loggerOptions);
 
 end
 

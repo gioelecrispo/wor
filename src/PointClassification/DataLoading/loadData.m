@@ -1,7 +1,14 @@
-function [data, options] = loadData(options)
+function [data, options] = loadData(options, imagepath)
 
-path = retrieveSignaturePath([options.imagebasepath '/' options.databasepath], options.writer, options.signature);
-
+if ~exist('imagepath', 'var')
+    path = retrieveSignaturePath([options.imagebasepath '/' options.databasepath], options.writer, options.signature);
+else
+    path.signaturename = 'default';
+    path.thinpath = imagepath;
+    path.skelpath = imagepath;
+    
+end
+    
 % - Logging initialization
 options.loggerOptions.name = path.signaturename;
 logger = createLogger(options.loggerOptions);
@@ -21,8 +28,13 @@ catch Exception
 end
 
 
-logger.info('Signature Name: %s', [path.databasename '/' path.signaturename]);
-logger.debug('Database: %s, writer; %d, signature: %d', path.databasename, options.writer, options.signature);
+if strcmp(path.signaturename, 'default') ~= 1
+    logger.info('Signature Name: %s', [path.databasename '/' path.signaturename]);
+    logger.debug('Database: %s, writer; %d, signature: %d', path.databasename, options.writer, options.signature);
+else
+    logger.info('Loaded Image from: %s', imagepath);
+end
+
 
 
 end

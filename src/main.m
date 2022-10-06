@@ -48,4 +48,7 @@ config.signature = 1;
 
 
 %% WRITING ORDER RECOVERY 
-[image, clusters, unfolder, data, results] = writeOrderRecovery(config);
+imagepath = '../databases/examples/high/c-092-02__thin.png';
+%imagepath = '../databases/examples/medium/019f09__thin.png';
+%imagepath = '../databases/examples/low/c-055-11__thin.png';
+[x, y, wor_result] = wor(imagepath);

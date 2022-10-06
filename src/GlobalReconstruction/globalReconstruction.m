@@ -1,4 +1,4 @@
-function unfolder = globalReconstruction(image, clusters, data, options)
+function [x, y, wor_result] = globalReconstruction(image, clusters, data, options)
 
 logger = getLogger(options);
 logger.info('** Global Reconstruction **');
@@ -40,5 +40,9 @@ else
     % - Trace Following
     unfolder = doTraceFollowing(image, clusters, unfolder, data, options);
 end
+
+x = unfolder.unfoldedArray(:, 1);
+y = unfolder.unfoldedArray(:, 2);
+wor_result = unfolder;
 
 end
