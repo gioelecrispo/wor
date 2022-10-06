@@ -65,10 +65,18 @@ It is needed to make Matlab aware of all the functions in the folder. You need t
 The code below, in the `main.m` file, allows you to run the writing order recovery on an image. 
 ```matlab
 imagepath = '../databases/examples/high/c-092-02__thin.png';
-[x, y, wor_result] = wor(imagepath, doplot)
+% doplot => [OPTIONAL] 0 if you don't want plot / 1 otherwise;
+% config => [OPTIONAL] for config see below
+[x, y, wor_result] = wor(imagepath, doplot, config)
 ```
 
-`wor` is a function that accepts as input the image path and a flag for showing the dynamic plotting of the trajectory on the image, as shown in the demo. It is composed of these step: 
+`wor` is a function that accepts three inputs:
+ - the image path;
+ - an optional flag for showing the dynamic plotting of the trajectory on the image, as shown in the demo; 
+ - an optional additional configuration, if you want to change it.
+For the additional configuration take a look of the `src/Execution/Options/configuration.m` file.
+
+`wor` function is composed of these step: 
 ```matlab
 function [x, y, wor_result] = wor(imagepath, doplot)
 %% CONFIGURATION AND IMAGE LOADING
