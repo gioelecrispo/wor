@@ -6,7 +6,7 @@ function anglediff = angdiffd(angle1, angle2)
 % vector with the i-th element of the second.
 
 if nargin == 1 
-    anglediff = abs(rad2deg(angdiff(deg2rad(angle1))));
+    anglediff = angdiffd(angle1(2:end), angle1(1:end-1))
 elseif nargin == 2
     if length(angle1) == length(angle2)
         anglediff = zeros(1, length(angle1));
